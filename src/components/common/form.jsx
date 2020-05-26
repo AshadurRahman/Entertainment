@@ -19,7 +19,7 @@ class Form extends Component {
         for (let item of error.details)
         errors[item.path[0]] = item.message;
         return errors;
-    };
+    }; // validation process
    
     validateProperty = ({ name, value}) => {
         const obj = { [name]: value};
